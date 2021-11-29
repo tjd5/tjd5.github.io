@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>How to Use Docker</title>
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&display=swap" rel="stylesheet"> <!-- font-family: 'Koh Santepheap', cursive; -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!-- font-family: 'Bebas Neue', cursive; -->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- font-family: 'Lobster', cursive; -->
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet"> <!-- font-family: 'Kanit', sans-serif; -->
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="terminal.html">Terminal</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="vi.html">VI Commands</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="github.html">GitHub</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="azure.html">Azure</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="docker.html">Docker</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="bootstrap.html">Bootstrap</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="OOPs.html">OOps</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="aaa.html">AAA Testing</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="calcDemonstrations.html">Calculator Demonstrations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('../img/coding.jpeg');">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7" style="width: 100%;">
+                        <div class="site-heading">
+                            <h1 style="font-family: 'Bebas Neue', cursive; font-size: 95px;">Using Docker</h1>
+                            <span class="subheading" style="font-size: 40px; font-family: 'Koh Santepheap', cursive;"><b>Using GitHub, Terminal, and Azure</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>In this section of the website, you will learn about Docker. Docker is a containization tool that will upload your website to Azure. We will also go over Docker Commands.</p>
+                        <p class="lead">In this page, you will learn how to:</p>
+                        <ul>
+                            <li>Build and run an image as a container</li>
+                            <li>Share images using Docker Hub</li>
+                            <li>Deploy Docker applications using multiple containers with a database</li>
+                            <li>Running applications using Docker Compose</li>
+                        </ul>
+                        <p class="lead">The first step to getting started with Docker is to download and install the current version of Docker on your computer. Before doing so, make sure that you are installing the correct Docker for your computer (Apple chip/Intel chip/Windows/Linux).</p>
+                        <p class="lead">Once Docker is installed on your computer, open command prompt or terminal depending on what operating system you have. Next, we will start imputing commands to run docker.</p>
+                        <p class="lead">First run the command: $ docker run –d –p 80:80 docker/getting-started.</p>
+                        <ul>
+                            <li>The –d runs the container in the background which is called detached mode.
+                            <li>The –p 80:80 maps the port 80 of the host to port 80 of the container.
+                            <li>Lastly, docker/getting-started is the image that is being used.
+                        </ul>
+                        <p class="lead">After this, you can open your Docker Desktop and see the container that is running on your machine. The Docker Desktop is helpful to see container logs, getting shells inside the container, and efficiently manage containers. A container is another process that is running on your machine separate from the processes on host.</p>
+                        <p class="lead">Before running the application, the application source code must be on your machine. Clone the repository that contains your application source code and use any code editor that you would like to open the project. To build the application, it is important to understand that a Dockerfile is needed. A Dockerfile is a script of instructions that is used to create the container image.</p>
+
+                        <p>Dockerfiles are typically set up using four layers that are stacked with the layers being:</p>
+                        <ul>
+                            <li>FROM (environment): creates a layer from the environment's Docker image.</li>
+                            <li>COPY (./app): adds the files from the current directory from the Docker client.</li>
+                            <li>RUN (make /app): builds your application.</li>
+                            <li>CMD ( ): specifies what command to run in the container.</li>
+                        </ul>
+                        <p>All the text in the parenthesis can be different based on what you are using, it is important to read up on the<a href="https://docs.docker.com/develop/develop-images/dockerfile_best-practices/"> best practices for writing Dockerfiles </a>to understand how to correctly execute a working Dockerfile. (NOTE: MAKE SURE THE DOCKERFILE DOES NOT HAVE A .TXT EXTENSION AS THIS WILL CAUSE ISSUES LATER)</p>
+                        <p>Using your terminal, and make sure that you are in the app directory with the Dockerfile. Now, you can build the container using the command: $ docker build -t getting-started . This command builds a new container image using the Dockerfile.</p>
+                        <p>Next, you can start your container using the docker run command and specify the name of the image created, for example: $ docker run -dp 3000:3000 getting-started</p>
+                        <p>Using this example, you can now open up a web browser and type in http://localhost:3000. This should show the application.</p>
+                        <p>You can use the command: $ docker ps, to get the ID of the container. Using this ID you will now be able to stop the container by using the command docker stop. The command is: $ docker stop <the-container-id></p>
+                        <p>When you are ready, you can also share this application on Docker Hub. To push the image, you need to create a repository on Docker Hub making sure that the visibility is public. Next you need to use the command: $ docker login -u YOUR-USER-NAME to login to Docker Hub. Next, use the docker tag command: $ docker tag getting-started YOUR-USER-NAME/YOUR-REPO-NAME. Lastly, you can push your repository to Docker Hub using the command: $ docker push YOUR-USER-NAME/YOUR-REPO-NAME.</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="border-top">
+             <div class="container px-4 px-lg-5">
+                 <div class="row gx-4 gx-lg-5 justify-content-center">
+                     <div class="col-md-10 col-lg-8 col-xl-7">
+                      <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                          <a href="#!">
+                          <span class="fa-stack fa-lg">
+                              <i class="fas fa-circle fa-stack-2x"></i>
+                              <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="#!">
+                                  <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                  </span>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="#!">
+                              <span class="fa-stack fa-lg">
+                                  <i class="fas fa-circle fa-stack-2x"></i>
+                                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                              </span>
+                              </a>
+                          </li>
+                      </ul>
+                      <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2021</div>
+                  </div>
+                </div>
+             </div>
+          </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
